@@ -1,0 +1,9 @@
+name: triorecord
+
+services:
+  triorecord-app:
+    image: triorecord-app:latest
+    build: .
+    ports:
+      - "1910:80"
+    restart: always
